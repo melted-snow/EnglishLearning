@@ -13,14 +13,19 @@ namespace EnglishLearning
 {
     public partial class WordManagementForm : Form
     {
-        bool _ReaderExecuted = false;
-        SqliteDataReader reader;
-
         public WordManagementForm()
         {
             InitializeComponent();
 
             dataGridView1.SelectionMode = DataGridViewSelectionMode.FullRowSelect;
+            WordData.sql.CommandText = "SELECT * FROM MAIN";
+            WordData.sql.ExecuteNonQuery();
+            var reader = WordData.sql.ExecuteReader();
+            while (reader.Read())
+            {
+                dataGridView1.Rows.Add(reader["WORD"].ToString(), reader["DESCRIPTION"].ToString());
+            }
+            reader.Dispose();
         }
 
         private void deleteButton_Click(object sender, EventArgs e)
@@ -47,7 +52,7 @@ namespace EnglishLearning
             /*
              * 追加用フォーム
              */
-            var af = new AddForm();
+            var af = new AddForm(ref dataGridView1);
             af.Show();
         }
 
@@ -67,23 +72,6 @@ namespace EnglishLearning
                     r.Visible = true;
                 }
             }
-        }
-
-        /*
-         * 何回も押すと、その分同じものが追加されてしまう
-         * 差分だけ追加または削除する必要がある
-         */
-        private void UpdateButton_Click(object sender, EventArgs e)
-        {
-            if (_ReaderExecuted) reader.Dispose();
-            WordData.sql.CommandText = $"SELECT * FROM MAIN";
-            WordData.sql.ExecuteNonQuery();
-            reader = WordData.sql.ExecuteReader();
-            while (reader.Read())
-            {
-                dataGridView1.Rows.Add(reader[1], reader[2]);
-            }
-            reader.Dispose();
         }
     }
 }

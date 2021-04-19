@@ -12,14 +12,17 @@ namespace EnglishLearning
 {
     public partial class AddForm : Form
     {
-        public AddForm()
+        DataGridView d;
+        public AddForm(ref DataGridView d)
         {
             InitializeComponent();
+            this.d = d;
         }
 
         private void OKButton_Click(object sender, EventArgs e)
         {
             WordData.Add(WordText.Text, DescriptionText.Text);
+            d.Rows.Add(WordText.Text, DescriptionText.Text);
             WordText.Clear();
             DescriptionText.Clear();
         }

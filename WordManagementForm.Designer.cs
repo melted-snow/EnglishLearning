@@ -37,7 +37,6 @@ namespace EnglishLearning
             this.editButton = new System.Windows.Forms.Button();
             this.searchButton = new System.Windows.Forms.Button();
             this.textBox1 = new System.Windows.Forms.TextBox();
-            this.UpdateButton = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
             this.SuspendLayout();
             // 
@@ -117,22 +116,11 @@ namespace EnglishLearning
             this.textBox1.Size = new System.Drawing.Size(543, 19);
             this.textBox1.TabIndex = 5;
             // 
-            // UpdateButton
-            // 
-            this.UpdateButton.Location = new System.Drawing.Point(659, 295);
-            this.UpdateButton.Name = "UpdateButton";
-            this.UpdateButton.Size = new System.Drawing.Size(75, 23);
-            this.UpdateButton.TabIndex = 6;
-            this.UpdateButton.Text = "更新";
-            this.UpdateButton.UseVisualStyleBackColor = true;
-            this.UpdateButton.Click += new System.EventHandler(this.UpdateButton_Click);
-            // 
             // WordManagementForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 12F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(800, 450);
-            this.Controls.Add(this.UpdateButton);
             this.Controls.Add(this.textBox1);
             this.Controls.Add(this.searchButton);
             this.Controls.Add(this.editButton);
@@ -157,6 +145,5 @@ namespace EnglishLearning
         private System.Windows.Forms.Button editButton;
         private System.Windows.Forms.Button searchButton;
         private System.Windows.Forms.TextBox textBox1;
-        private System.Windows.Forms.Button UpdateButton;
     }
 }

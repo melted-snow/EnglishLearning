@@ -12,8 +12,8 @@ namespace EnglishLearning
 {
     public partial class TestForm : Form
     {
-        int[] TestOrder;
-        int Order = 0;
+        //int[] TestOrder;
+        //int Order = 0;
 
         public TestForm()
         {
