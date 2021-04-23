@@ -58,18 +58,15 @@ namespace EnglishLearning
 
         private void searchButton_Click(object sender, EventArgs e)
         {
-            /*
-             * dataGridView1のrowを絞り込む
-             */
             foreach(DataGridViewRow r in dataGridView1.Rows)
             {
-                if (r.Cells[0].ToString().Contains(textBox1.Text) || r.Cells[1].ToString().Contains(textBox1.Text))
+                if (r.Cells[0].Value.ToString().Contains(searchtb.Text) || r.Cells[1].Value.ToString().Contains(searchtb.Text))
                 {
-                    r.Visible = false;
+                    r.Visible = true;
                 }
                 else
                 {
-                    r.Visible = true;
+                    r.Visible = false;
                 }
             }
         }

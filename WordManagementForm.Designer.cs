@@ -36,7 +36,7 @@ namespace EnglishLearning
             this.addButton = new System.Windows.Forms.Button();
             this.editButton = new System.Windows.Forms.Button();
             this.searchButton = new System.Windows.Forms.Button();
-            this.textBox1 = new System.Windows.Forms.TextBox();
+            this.searchtb = new System.Windows.Forms.TextBox();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
             this.SuspendLayout();
             // 
@@ -109,19 +109,19 @@ namespace EnglishLearning
             this.searchButton.UseVisualStyleBackColor = true;
             this.searchButton.Click += new System.EventHandler(this.searchButton_Click);
             // 
-            // textBox1
+            // searchtb
             // 
-            this.textBox1.Location = new System.Drawing.Point(109, 35);
-            this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(543, 19);
-            this.textBox1.TabIndex = 5;
+            this.searchtb.Location = new System.Drawing.Point(109, 35);
+            this.searchtb.Name = "searchtb";
+            this.searchtb.Size = new System.Drawing.Size(543, 19);
+            this.searchtb.TabIndex = 5;
             // 
             // WordManagementForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 12F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(800, 450);
-            this.Controls.Add(this.textBox1);
+            this.Controls.Add(this.searchtb);
             this.Controls.Add(this.searchButton);
             this.Controls.Add(this.editButton);
             this.Controls.Add(this.addButton);
@@ -144,6 +144,6 @@ namespace EnglishLearning
         private System.Windows.Forms.Button addButton;
         private System.Windows.Forms.Button editButton;
         private System.Windows.Forms.Button searchButton;
-        private System.Windows.Forms.TextBox textBox1;
+        private System.Windows.Forms.TextBox searchtb;
     }
 }
