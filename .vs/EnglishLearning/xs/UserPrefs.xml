@@ -1,0 +1,27 @@
+﻿<Properties StartupConfiguration="{15BBE55B-9008-4FAF-BCFD-3D4D4B31828D}|Default">
+  <MonoDevelop.Ide.ItemProperties.EnglishLearning PreferredExecutionTarget="MonoDevelop.Default" />
+  <MonoDevelop.Ide.Workbench ActiveDocument="WordManagementForm.cs">
+    <Files>
+      <File FileName="MainForm.cs" Line="15" Column="6" />
+      <File FileName="WordData.cs" />
+      <File FileName="WordManagementForm.cs" Line="50" Column="36" />
+    </Files>
+    <Pads>
+      <Pad Id="ProjectPad">
+        <State name="__root__">
+          <Node name="EnglishLearning" expanded="True">
+            <Node name="EnglishLearning" expanded="True">
+              <Node name="WordManagementForm.cs" expanded="True" selected="True" />
+            </Node>
+          </Node>
+        </State>
+      </Pad>
+    </Pads>
+  </MonoDevelop.Ide.Workbench>
+  <MonoDevelop.Ide.DebuggingService.PinnedWatches />
+  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
+  <MonoDevelop.Ide.DebuggingService.Breakpoints>
+    <BreakpointStore />
+  </MonoDevelop.Ide.DebuggingService.Breakpoints>
+  <MultiItemStartupConfigurations />
+</Properties>

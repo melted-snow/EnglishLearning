@@ -26,8 +26,12 @@ namespace EnglishLearning
             var op = new OpenFileDialog();
             op.FileName = WordData.FileName;
             if (op.ShowDialog() == DialogResult.OK)
+            var ofd = new OpenFileDialog();
+            ofd.FileName = WordData.FileName;
+            if (ofd.ShowDialog() == DialogResult.OK)
             {
                 WordData.FileName = op.FileName;
+                WordData.FileName = ofd.FileName;
                 WordData.Connect();
             }
         }
